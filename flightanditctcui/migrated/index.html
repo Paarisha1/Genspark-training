@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+</head>
+<body>
+    <h1>Flight Booking System</h1>
+
+    <ul id="flights"></ul>
+
+    <form id="flightBookingForm">
+        <label for="flightSelect">Select a Flight: </label>
+        <select id="flightSelect"></select>
+        <button type="submit">Book Flight</button>
+    </form>
+
+    <div id="confirmation" style="display: none;">
+        <p id="confirmationMessage"></p>
+    </div>
+
+    <form id="newFlightForm">
+        <h2>Add New Flight</h2>
+        <input type="text" id="newFlightNumber" placeholder="Flight Number" required>
+        <input type="text" id="newFrom" placeholder="From" required>
+        <input type="text" id="newTo" placeholder="To" required>
+        <input type="number" id="newPrice" placeholder="Price" required>
+        <button type="submit">Add Flight</button>
+    </form>
+
+    <form id="flightRemoveForm">
+        <h2>Remove Flight</h2>
+        <input type="text" id="removeFlightNumber" placeholder="Flight Number" required>
+        <button type="submit">Remove Flight</button>
+    </form>
+
+    <script src="script.js"></script> <!-- This will be the compiled JS file -->
+</body>
+</html>

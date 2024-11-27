@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-header {
+    background: url(https://images.pexels.com/photos/28291468/pexels-photo-28291468/free-photo-of-father-with-his-daughter.jpeg?auto=compress&cs=tinysrgb&w=400) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-quote {
+    background: url(https://images.pexels.com/photos/276092/pexels-photo-276092.jpeg?auto=compress&cs=tinysrgb&w=400) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

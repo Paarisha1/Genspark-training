@@ -1,0 +1,88 @@
+/* General Reset and Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffe6eb; /* Soft pink background */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Centered Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ad1457; /* Dark pink color */
+  margin-bottom: 20px;
+}
+
+/* Centered Search Box */
+.search-params {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color:pink; /* Dark pink color */
+  color: white; /* White text color for contrast */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-params label {
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+  color: white;
+}
+
+.search-params input,
+.search-params select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-params button {
+  width: 100%;
+  padding: 10px;
+  background-color: #880e4f; /* Darker pink for the button */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-params button:hover {
+  background-color: #6d0739;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-params {
+    max-width: 90%;
+  }
+}

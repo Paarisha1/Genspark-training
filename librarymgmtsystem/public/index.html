@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+     <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-8 bg-white rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-6">Library Management System</h1>
+
+        <!-- Add Book Section -->
+        <section class="add-book-section mb-6">
+            <h2 class="text-xl font-semibold mb-4">Add a New Book</h2>
+            <form id="addBookForm" class="space-y-4">
+                <input type="text" id="bookTitle" placeholder="Book Title" required class="w-full p-2 border border-gray-300 rounded">
+                <input type="text" id="bookAuthor" placeholder="Book Author" required class="w-full p-2 border border-gray-300 rounded">
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Add Book</button>
+            </form>
+        </section>
+
+        <!-- Available Books Section -->
+        <section class="book-list-section mb-6">
+            <h2 class="text-xl font-semibold mb-4">Available Books</h2>
+            <ul id="bookList" class="list-disc pl-6"></ul>
+        </section>
+
+        <!-- Borrow Book Section -->
+        <section class="borrow-book-section mb-6">
+            <h2 class="text-xl font-semibold mb-4">Borrow a Book</h2>
+            <form id="borrowBookForm" class="space-y-4">
+                <input type="text" id="userName" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded">
+                <input type="text" id="borrowBookTitle" placeholder="Book Title" required class="w-full p-2 border border-gray-300 rounded">
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Borrow Book</button>
+            </form>
+            <p id="borrowMessage" class="mt-4 text-green-600"></p>
+        </section>
+
+        <!-- Return Book Section -->
+        <section class="return-book-section">
+            <h2 class="text-xl font-semibold mb-4">Return a Book</h2>
+            <form id="returnBookForm" class="space-y-4">
+                <input type="text" id="returnUserName" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded">
+                <input type="text" id="returnBookTitle" placeholder="Book Title" required class="w-full p-2 border border-gray-300 rounded">
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Return Book</button>
+            </form>
+            <p id="returnMessage" class="mt-4 text-green-600"></p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

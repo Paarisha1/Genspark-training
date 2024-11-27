@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+<body class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 text-white">
+<div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-20">
+   
+    <header class="flex justify-between items-center">
+        <a href="#" class="flex items-center">
+            <h1 class="text-4xl font-bold">WFA</h1>
+        </a>
+        <div class="md:hidden">
+        
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+       
+        <nav class="hidden md:flex space-x-8">
+            <a href="#" class="hover:text-gray-400">Home</a>
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Contact</a>
+        </nav>
+    </header>
+
+ 
+    <main class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-12">
+       
+        <div class="flex items-center justify-center lg:w-1/2">
+            <img src="https://images.pexels.com/photos/264905/pexels-photo-264905.jpeg?auto=compress&cs=tinysrgb&w=600" alt="work from anywhere" class="outline outline-white shadow-2xl shadow-black w-full h-auto lg:max-w-md"/>
+        </div>
+       
+        <div class="space-y-6 mt-16 lg:w-1/2 lg:mt-0">
+          
+            <div class="text-5xl font-bold leading-tight md:text-6xl lg:text-7xl">
+                <h1>Let's Switch</h1>
+                <h1>To Remote</h1>
+            </div>
+
+           
+            <p class="text-sm md:text-base lg:text-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium excepturi quia earum molestias qui, voluptatibus pariatur beatae veritatis nihil! Mollitia maiores voluptates nobis, earum, nulla consectetur voluptate assumenda architecto sit asperiores recusandae, exercitationem tempora voluptatum laudantium. Quaerat inventore at rerum ea ipsa adipisci commodi tenetur rem, eligendi similique itaque hic veritatis doloribus qui, quia atque, quae sunt? Soluta aliquam ducimus placeat, laborum, quas consequatur officiis perferendis vel modi temporibus nobis eos cumque excepturi nam accusamus, quod at beatae veniam tempora! Ratione quod quos in saepe. Totam provident tempora rerum quibusdam!
+            </p>
+
+         
+            <form action="" class="flex flex-col gap-2 md:flex-row md:gap-0">
+                <input type="text" placeholder="Enter City" class="max-md:rounded-md md:rounded-l-md px-4 py-3 text-black w-full md:w-auto"/>
+                <button class="bg-purple-900 px-4 py-3 max-md:rounded-md md:rounded-r-md whitespace-nowrap">Find Your Office</button>
+            </form>
+
+           
+            <div class="flex flex-col gap-4 py-8">
+                <p class="font-semibold text-lg md:text-xl">Used by these companies</p>
+                <ul class="flex gap-6 justify-center md:justify-start">
+                    <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+                    <li><i class="fa-brands fa-airbnb fa-2x"></i></li>
+                    <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+                    <li><i class="fa-brands fa-apple fa-2x"></i></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
+
+
+
+
+<!-- Body & Wrapper Styling
+body class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 text-white"
+
+bg-gradient-to-r: Creates a gradient background that transitions from left to right (rightwards).
+from-blue-700 via-blue-800 to-gray-900: Defines the gradient colors, starting from blue-700, transitioning through blue-800, and ending with gray-900.
+text-white: Sets the default text color to white.
+div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-20"
+
+min-h-screen: Sets the minimum height of the div to the full height of the viewport.
+px-6 py-3: Sets horizontal padding (px) to 1.5rem and vertical padding (py) to 0.75rem.
+flex flex-col: Creates a flex container with a column layout.
+gap-10: Sets a gap of 2.5rem between flex items.
+md:px-10 lg:px-20: Sets responsive padding; for medium screens (md), horizontal padding is 2.5rem, and for large screens (lg), it's 5rem.
+Header
+header class="flex justify-between items-center"
+
+flex: Creates a flex container.
+justify-between: Distributes space between items evenly, pushing them to the ends.
+items-center: Centers items vertically within the container.
+a class="flex items-center"
+
+flex: Creates a flex container within the anchor tag.
+items-center: Vertically centers any content within the flex container.
+h1 class="text-4xl font-bold"
+
+text-4xl: Sets the font size to 2.25rem.
+font-bold: Sets the font weight to bold.
+div class="md:hidden"
+
+md:hidden: Hides the div on medium screens and above.
+nav class="hidden md:flex space-x-8"
+
+hidden: Hides the navigation on small screens.
+md:flex: Displays the navigation as a flex container on medium screens and above.
+space-x-8: Adds a horizontal gap of 2rem between items in the flex container.
+a class="hover:text-gray-400"
+
+hover:text-gray-400: Changes the text color to gray-400 on hover.
+Main Section Layout
+main class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-12"
+
+flex flex-col: Sets up a flex container with a column layout.
+lg:flex-row: Changes the layout to a row on large screens.
+lg:justify-between: Distributes space between items on large screens.
+lg:items-center: Centers items vertically within the container on large screens.
+lg:gap-12: Adds a gap of 3rem between items on large screens.
+div class="flex items-center justify-center lg:w-1/2" (Image Container)
+
+flex: Creates a flex container.
+items-center justify-center: Centers items both vertically and horizontally.
+lg:w-1/2: Sets the width to 50% on large screens.
+img class="outline outline-white shadow-2xl shadow-black w-full h-auto lg:max-w-md"
+
+outline outline-white: Adds a white outline to the image.
+shadow-2xl shadow-black: Adds a large black shadow around the image.
+w-full h-auto: Sets the width to 100% of its container and maintains the aspect ratio.
+lg:max-w-md: Limits the maximum width to 28rem on large screens.
+div class="space-y-6 mt-16 lg:w-1/2 lg:mt-0" (Text & Form Container)
+
+space-y-6: Adds vertical spacing of 1.5rem between child elements.
+mt-16: Sets a top margin of 4rem.
+lg:w-1/2: Sets the width to 50% on large screens.
+lg:mt-0: Removes the top margin on large screens.
+div class="text-5xl font-bold leading-tight md:text-6xl lg:text-7xl" (Heading Text)
+
+text-5xl: Sets font size to 3rem.
+font-bold: Sets font weight to bold.
+leading-tight: Sets tight line height.
+md:text-6xl lg:text-7xl: Adjusts font size to 3.75rem on medium screens and 4.5rem on large screens.
+p class="text-sm md:text-base lg:text-lg" (Paragraph Text)
+
+text-sm: Sets font size to 0.875rem.
+md:text-base lg:text-lg: Adjusts font size to 1rem on medium screens and 1.125rem on large screens.
+Form & Button Styling
+form class="flex flex-col gap-2 md:flex-row md:gap-0"
+
+flex flex-col: Creates a flex container with a column layout.
+gap-2: Adds a vertical gap of 0.5rem between elements.
+md:flex-row md:gap-0: Switches to a row layout and removes the gap between elements on medium screens.
+input class="max-md:rounded-md md:rounded-l-md px-4 py-3 text-black w-full md:w-auto"
+
+max-md:rounded-md: Adds rounded corners on all sides on small screens.
+md:rounded-l-md: Rounds only the left corners on medium screens and above.
+px-4 py-3: Adds horizontal padding of 1rem and vertical padding of 0.75rem.
+text-black: Sets input text color to black.
+w-full md:w-auto: Makes the input full-width on small screens and auto-width on medium screens.
+button class="bg-purple-900 px-4 py-3 max-md:rounded-md md:rounded-r-md whitespace-nowrap"
+
+bg-purple-900: Sets the background color to purple-900.
+px-4 py-3: Adds padding of 1rem horizontally and 0.75rem vertically.
+max-md:rounded-md: Adds rounded corners on all sides on small screens.
+md:rounded-r-md: Rounds only the right corners on medium screens and above.
+whitespace-nowrap: Prevents the button text from wrapping.
+Company Logos Section
+div class="flex flex-col gap-4 py-8"
+
+flex flex-col: Creates a flex container with a column layout.
+gap-4: Adds a vertical gap of 1rem between child elements.
+py-8: Adds padding of 2rem on top and bottom.
+p class="font-semibold text-lg md:text-xl"
+
+font-semibold: Sets the font weight to semi-bold.
+text-lg md:text-xl: Sets the font size to 1.125rem, increasing to 1.25rem on medium screens.
+ul class="flex gap-6 justify-center md:justify-start"
+
+flex: Creates a flex container for the list.
+gap-6: Adds a horizontal gap of 1.5rem between items.
+justify-center md:justify-start: Centers the items horizontally by default and aligns them to the start on medium screens. -->

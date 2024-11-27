@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Booking System</h1>
+
+       
+        <div id="flightList">
+            <h2>Available Flights</h2>
+            <ul id="flights"></ul>
+        </div>
+
+        
+        <div id="bookingForm">
+            <h2>Book a Flight</h2>
+            <form id="flightBookingForm">
+                <label for="flightSelect">Select Flight:</label>
+                <select id="flightSelect"></select>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" min="1" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+        <div id="addFlightForm">
+            <h2>Add New Flight</h2>
+            <form id="newFlightForm">
+                <label for="newFlightNumber">Flight Number:</label>
+                <input type="text" id="newFlightNumber" required>
+                <label for="newFrom">From:</label>
+                <input type="text" id="newFrom" required>
+                <label for="newTo">To:</label>
+                <input type="text" id="newTo" required>
+                <label for="newPrice">Price:</label>
+                <input type="number" id="newPrice" required>
+
+                <button type="submit">Add Flight</button>
+            </form>
+        </div>
+
+       
+        <div id="removeFlightForm">
+            <h2>Remove a Flight</h2>
+            <form id="flightRemoveForm">
+                <label for="removeFlightNumber">Flight Number:</label>
+                <input type="text" id="removeFlightNumber" required>
+
+                <button type="submit">Remove Flight</button>
+            </form>
+        </div>
+
+       
+        <div id="confirmation" style="display:none;">
+            <h2>Booking Confirmation</h2>
+            <p id="confirmationMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Added to ensure padding and borders don't affect the width */
+        }
+
+        body {
+            height: 100vh; /* Fixed the unit error from "100rme" to "100vh" for full-height layout */
+            background-color: #242b2e;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centered the content */
+        }
+
+        .container {
+            margin: 20vh auto; /* Adjusted to ensure central alignment */
+            width: 300px; /* Adjusted the width */
+            padding: 15px;
+            border-radius: 12px;
+            background-color:rgb(117, 0, 167);
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5); /* Added shadow to match UI */
+            overflow: hidden; /* Ensured that content doesn't overflow */
+        }
+
+        img {
+            width: 100%;
+            border-radius: 12px; /* Added to give image rounded corners */
+        }
+
+        h2 {
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: 700;
+            color: wheat;
+            text-align: center; /* Centered the text */
+            margin: 10px 0; /* Added margin to match layout */
+        }
+
+        .text {
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: 400;
+            color: wheat;
+            line-height: 1.4em;
+            text-align: center; /* Centered the paragraph */
+            margin: 5px 0; /* Adjusted margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="Sample Image" />
+        <h2>This is a Sample Heading</h2>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perferendis quia iste nisi ea vero
+            voluptatibus
+            corrupti harum aliquam modi.
+        </div>
+    </div>
+</body>
+
+</html>
